@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import dj_database_url
-from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -89,11 +88,6 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(default=os.environ.get('postgresql://student_management_system_b5ob_user:hCgvIZA3yaqsk1zZZnjFY0FQrfhMyejs@dpg-cvbdg55rie7s739eg2ig-a/student_management_system_b5ob'))
 }
-
-SECRET_KEY = config('l*5p*k(++1@^y988knj@^_^ahopth1)_qqqus9x@jahx(^sryd')
-
-# Override with PostgreSQL if DATABASE_URL is set (e.g., in production)
-DATABASES['default'].update(dj_database_url.config(default=os.environ.get('postgresql://student_management_system_b5ob_user:hCgvIZA3yaqsk1zZZnjFY0FQrfhMyejs@dpg-cvbdg55rie7s739eg2ig-a/student_management_system_b5ob')))
 
 
 # Password validation

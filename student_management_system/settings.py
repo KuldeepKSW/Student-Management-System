@@ -86,7 +86,17 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('postgresql://student_management_system_b5ob_user:hCgvIZA3yaqsk1zZZnjFY0FQrfhMyejs@dpg-cvbdg55rie7s739eg2ig-a/student_management_system_b5ob'))
+    'default': {
+        #=====Enable Only Making Project Live on Heroku====
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'sms.sqlite3'),
+         #'ENGINE': 'django.db.backends.mysql',
+         #'NAME': 'student_management_system',
+         #'USER': 'sms',
+         #'PASSWORD': 'student_management_password',
+         #'HOST': 'localhost',
+         #'PORT': '3306'
+    }
 }
 
 

@@ -25,7 +25,7 @@ SECRET_KEY = 'so*rai_2(lk7t(yh%de+_kp_c%*r_b9wkga%gyo5tl9_8_r!xx'
 #SECRET_KEY = config ('SECRET_KEY', 'l*5p*k(++1@^y988knj@^_^ahopth1)_qqqus9x@jahx(^sryd')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 

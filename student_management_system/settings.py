@@ -87,12 +87,12 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # PostgreSQL database engine
-        'NAME': 'student_management_system_b5ob',  # Database name
-        'USER': 'student_management_system_b5ob_user',  # Database user
-        'PASSWORD': 'hCgvIZA3yaqsk1zZZnjFY0FQrfhMyejs',  # Database password
-        'HOST': 'dpg-cvbdg55rie7s739eg2ig-a.singapore-postgres.render.com',  # Database host (use the external hostname)
-        'PORT': '5432',  # Database port
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME', 'student_management_system_b5ob'),
+        'USER': os.environ.get('DB_USER', 'student_management_system_b5ob_user'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'hCgvIZA3yaqsk1zZZnjFY0FQrfhMyejs'),
+        'HOST': os.environ.get('DB_HOST', 'dpg-cvbdg55rie7s739eg2ig-a.singapore-postgres.render.com'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
 

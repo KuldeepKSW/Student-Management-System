@@ -49,9 +49,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    #===Enable Only Making Project Live
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Correct position
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

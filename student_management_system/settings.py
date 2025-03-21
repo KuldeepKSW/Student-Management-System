@@ -98,6 +98,7 @@ DATABASES = {
     }
 }
 
+DATABASES["default"] = dj_database_url.parse("postgresql://student_management_system_b5ob_user:hCgvIZA3yaqsk1zZZnjFY0FQrfhMyejs@dpg-cvbdg55rie7s739eg2ig-a.singapore-postgres.render.com/student_management_system_b5ob")
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

@@ -98,7 +98,7 @@ DATABASES = {
     }
 }
 
-DATABASES["default"] = dj_database_url.parse("postgresql://student_management_system_zpvc_user:RTkuHqj8ojrwDhP2LMezHBcjHk6VWJuf@dpg-cvhssthopnds73fnfiqg-a/student_management_system_zpvc")
+#DATABASES["default"] = dj_database_url.parse("postgresql://student_management_system_zpvc_user:RTkuHqj8ojrwDhP2LMezHBcjHk6VWJuf@dpg-cvhssthopnds73fnfiqg-a/student_management_system_zpvc")
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
